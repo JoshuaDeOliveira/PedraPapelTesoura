@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedra Papel e Tesoura</title>
+  <link rel="stylesheet" href="Estilos/style.css">
+</head>
+<body>
+  <main>
+    <div class="Background">
+      <h1>PEDRA PAPEL E TESOURA</h1>
+      <section class="Botoes">
+        <button class="Botao" onclick="PlayGame('🤛')">🤛</button>
+        <button class="Botao" onclick="PlayGame('✌')">✌</button>
+        <button class="Botao" onclick="PlayGame('✋')">✋</button>
+      </section>
+      <section>
+        <div class="Separar">
+          <h2 id="Ghanor">Empate.</h2>
+          <ul class="Pontos" id="Quem">
+            <li>Você</li>
+            <li class="Jogada" id="Player">🤛</li>
+            <li class="Jogada" id="Computador">🤛</li>
+            <li>Computador</li>
+          </ul>
+          
+          <div>
+            <div class="Tabela">
+              <ul class="Pontos">
+                <li class="info">Vitorias: </li>
+                <li class="info" id="VicPontu">0</li>
+              </ul>
+              <ul class="Pontos">
+                <li class="info">Derrotas: </li>
+                <li class="info" id="DerPontu">0</li>
+              </ul>
+              <ul class="Pontos">
+                <li class="info">Empates: </li>
+                <li class="info" id="EmpPontu">0</li>
+              </ul>
+            </div>
+            <button onclick="Resetar()" id="Reset">Reset Score</button>
+          </div>
+        </div>
+      </section>
+      <script src="Scripts/Script.js"></script>
+    </div>
+  </main>
+</body>
+</html>
