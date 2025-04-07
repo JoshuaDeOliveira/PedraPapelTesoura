@@ -1,108 +1,67 @@
 @charset "UTF-8";
 
-*{
-  padding: 0px;
-  margin: 0px;
+/*Parte superior*/
+
+h1{
+  font-size: 21pt;
+
+  padding: 5px;
+  margin: 5px;
+  margin-top: 20px;
 }
 
-.Tabela{
-  display: flex;
-  flex-direction: row;
+/*Respostas*/
+
+#Resultado{
+  font-size: 16pt;
+  font-weight: bolder;
 }
 
-.Botao{
-  background-color: black;
-  height: 200px;
-  width: 200px;
-
-  font-size: 50pt;
-  margin: 0px 0px 10px 10px;
-  border-radius: 160px;
+.Respostas{
+  margin: 30px 10px 16px 7px;
+  display: none;
 }
 
-.Botoes{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 250px;
+#Explicacao{
+  font-size: 13pt;
+}
+
+/*Botoes*/
+
+.Game{
+  width: 120px;
+  height: 120px;
+  margin: 5px;
+
+  font-size: 40px;
+
+  border-radius: 75px;
+  border-color: white;
 }
 
 #Reset{
+  width: 120px;
   height: 40px;
-  width: 150px;
-  font-size: 25px;
-  border-radius: 10px;
-}
 
-.Separar{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  margin: 5px;
+  font-size: 15px;
+  border: 3px solid black;
 
-  height: 270px;
-}
-
-/*Controle da pontuação*/
-
-.Pontos{
-  margin: 10px 20px 10px 0px;
-  padding: 0px;
-  list-style: none;
-
-  display: flex;
-  flex-direction: row;
-}
-
-.info{
-  margin: 2px;
-  font-size: 20pt;
-}
-
-.Jogada{
-  font-size: 30pt;
-}
-
-/*Estilização do site*/
-
-main{
-  height: 100vh;
-  width: 100vw;
-  background-image: linear-gradient(to top, black, gray);
-
-  display: flex;
-}
-
-.Background{
+  color: black;
   background-color: white;
-
-  border: 5px solid black;
-  padding: 20px;
-  height: 600px;
-  width: 700px;
-  margin: auto;
 }
 
-h1{
-  margin: 10px;
-  text-align: center;
-}
+/*Resultados*/
 
-h2{
-  margin: 10px 0px 10px 0px;
-
-  font-weight: bold;
-}
-
-h3{
-  margin: 10px 0px 10px 0px; 
-}
-
-#Quem{
-  font-size: 20pt;
+.Res{
   display: flex;
-  align-items: center;
 }
 
-.Condicao{
-  font-size: 15pt;
+.List{
+  font-size: 14pt;
+}
+
+.Score{
+  list-style: none;
+  margin: 15px 15px 15px 7px;
 }
