@@ -91,5 +91,8 @@ function Reset(){
   Score.Pontos.Wins = 0
   Score.Pontos.Losses = 0
   Score.Pontos.Draw = 0
+
+  Score.Resultados.Resposta.style.display = 'none'
+  Score.Resultados.Jogadas.style.display = 'none'
   Atualizar() 
 }
