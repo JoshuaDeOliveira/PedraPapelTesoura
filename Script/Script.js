@@ -10,7 +10,7 @@ let Score = {
   },Resultados:{
       Resposta: document.querySelector('#Resultado'),
       Jogadas: document.querySelector('#Explicacao')
-  },Pontos: JSON.parse(localStorage.getItem('Pontos') || "{Wins: 0, Losses: 0, Draw: 0}")
+  },Pontos: JSON.parse(localStorage.getItem('Pontos') || '{"Wins": 0, "Losses": 0, "Draw": 0}')
 }
 
 document.addEventListener('DOMContentLoaded', function(){
