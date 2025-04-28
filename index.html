@@ -5,16 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pedra Papel Tesoura</title>
 
-  <link rel="stylesheet" href="./Estilos/style.css"> <!--CSS Da Pagina-->
-
   <link rel="stylesheet" href="./Estilos/Global.css"> <!--CSS GLOBAL-->
+  <link rel="stylesheet" href="./Estilos/Style.css"> <!--CSS Da Pagina-->
 </head>
 <body>
   <h1>Pedra Papel Tesoura</h1>
   <div class="Botoes">
-    <button onclick="Jokenpo('✋')" class="Game">✋</button>
-    <button onclick="Jokenpo('🤜')" class="Game">🤜</button>
-    <button onclick="Jokenpo('✌')" class="Game">✌</button>
+    <button class="Game Papel">✋</button>
+    <button class="Game Pedra">🤜</button>
+    <button class="Game Tesoura">✌</button>
   </div>
 
   <p id="Resultado" class="Respostas"></p>
@@ -34,7 +33,14 @@
     </ul>
   </div>
 
-  <button id="Reset" onclick="Reset()">Reset Score</button>
+  <button id="Reset" class="Reset">Reset Score</button>
+  <button id="Delete" class="AutoPlay">Auto Player</button>
+
+  <div class="js-certeza">
+    <p id="Resetar">Você tem certeza que quer resetar?</p>
+    <button class="Certeza Sim">Sim</button>
+    <button class="Certeza Nao">Não</button>
+  </div>
 
   <script src="./Script/Script.js"></script>
 </body>
